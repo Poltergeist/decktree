@@ -40,11 +40,11 @@ jobs:
     - run: npm run build --if-present
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./build
+      with:
+        path: ./build
 
   deploy:
-   environment:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
