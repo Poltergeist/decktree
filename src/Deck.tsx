@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useRef} from "react";
 import "./Deck.css";
 import { type MoxfieldDeck } from "./deck-types";
 
 function Deck({ deck }: { deck: MoxfieldDeck }) {
   const commanders = deck.commanders;
   const companions = deck.companions;
+  const link = useRef<HTMLAnchorElement>(null);
+  const clickHandler = () => link.current !== null ? link.current.click() : null
 
   return (
-    <div className="deck">
+    <div className="deck" onClick={clickHandler}>
       <header className="deck-header">
         <section
           className={`deck-logo commander${commanders.length}-companion${companions.length}`}
@@ -33,6 +35,7 @@ function Deck({ deck }: { deck: MoxfieldDeck }) {
         </section>
         <h3>{deck.name}</h3>
         <p>{deck.description}</p>
+        <p><a ref={link} href={deck.publicUrl} target="_blank"  rel="noreferrer">Visit Decklist</a></p>
       </header>
     </div>
   );

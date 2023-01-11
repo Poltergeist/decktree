@@ -25,14 +25,18 @@
   overflow: hidden;
   width: calc(var(--logo-width) * 3);
   color: white;
+  cursor: pointer;
 }
 .deck section {
   min-width: 100%;
 }
 
 .deck h3,
-.deck p {
+.deck p{
   margin: 1rem;
+}
+.deck a{
+  color: slategray;
 }
 
 .deck-logo {

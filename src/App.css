@@ -9,6 +9,14 @@
 .App > header img {
   max-width: 100vw;
 }
+.social-links li {
+  list-style-type: persian;
+}
+.social-links pre {
+  display: inline;
+  background: black;
+  padding: 0 0.5rem;
+}
 
 @media only screen and (min-width: 600px) {
   .deck-grid {
