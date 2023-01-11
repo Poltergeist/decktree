@@ -3,6 +3,13 @@
   grid-template-columns: 1fr;
   gap: 10px;
 }
+.App > header {
+  text-align: center;
+}
+.App > header img {
+  max-width: 100vw;
+}
+
 @media only screen and (min-width: 600px) {
   .deck-grid {
     grid-template-columns: repeat(2, 1fr);

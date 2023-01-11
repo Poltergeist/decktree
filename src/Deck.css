@@ -1,24 +1,21 @@
 :root {
   --border-color: white;
-  --logo-width: calc((100vw - 10px )/ 3);
+  --logo-width: calc((100vw - 10px) / 3);
 }
 @media only screen and (min-width: 600px) {
   :root {
-  --logo-width: calc((100vw / 2 - 20px )/ 3);
-
+    --logo-width: calc((100vw / 2 - 20px) / 3);
   }
 }
 
 @media only screen and (min-width: 800px) {
   :root {
-  --logo-width: calc((100vw / 3 - 30px )/ 3);
-
+    --logo-width: calc((100vw / 3 - 30px) / 3);
   }
 }
 @media only screen and (min-width: 1200px) {
   :root {
-  --logo-width: calc((100vw / 4 - 40px )/ 3);
-
+    --logo-width: calc((100vw / 4 - 40px) / 3);
   }
 }
 
@@ -27,13 +24,14 @@
   border-radius: 7px;
   overflow: hidden;
   width: calc(var(--logo-width) * 3);
-  color:white;
+  color: white;
 }
 .deck section {
   min-width: 100%;
 }
 
-.deck h3, .deck p{
+.deck h3,
+.deck p {
   margin: 1rem;
 }
 
@@ -63,6 +61,6 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.artist-attribution{
-margin: 0 0  10px;
+.artist-attribution {
+  margin: 0 0 10px;
 }
