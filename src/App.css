@@ -1,6 +1,7 @@
 .deck-grid {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: stretch;
   gap: 10px;
 }
 .App > header {

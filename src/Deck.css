@@ -23,7 +23,6 @@
   border: solid 1px var(--border-color);
   border-radius: 7px;
   overflow: hidden;
-  width: calc(var(--logo-width) * 3);
   color: white;
   cursor: pointer;
 }
@@ -35,10 +34,6 @@
 .deck p{
   margin: 1rem;
 }
-.deck a{
-  color: slategray;
-}
-
 .deck-logo {
   display: grid;
   max-width: 100%;
