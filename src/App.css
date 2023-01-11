@@ -10,6 +10,9 @@
 .App > header img {
   max-width: 100vw;
 }
+.social-links {
+  min-height: 100vh;
+}
 .social-links li {
   list-style-type: persian;
 }
