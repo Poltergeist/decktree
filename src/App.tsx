@@ -11,17 +11,29 @@ import { type MoxfieldDeck } from "./deck-types";
 function App() {
   const decks = data.decks;
   return (
-    <div className="App">
+    <div className="App" id="top">
       <header>
         <img src={logo} alt="decktree" />
       </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#deck-lists">Deck Lists</a>
+          </li>
+          <li>
+            <a href="#social-links">Social Links</a>
+          </li>
+        </ul>
+      </nav>
+      <section id="deck-lists">
         <h2> Deck lists</h2>
-      <section className="deck-grid">
-        {decks.map((deck: MoxfieldDeck) => (
-          <Deck key={`deck-${deck.id}`} deck={deck} />
-        ))}
+        <div className="deck-grid">
+          {decks.map((deck: MoxfieldDeck) => (
+            <Deck key={`deck-${deck.id}`} deck={deck} />
+          ))}
+        </div>
       </section>
-      <section className="social-links">
+      <section className="social-links" id="social-links">
         <h2>Social links</h2>
         <ul>
           <li>
@@ -44,6 +56,9 @@ function App() {
           <li>
             <img src={discordLogo} alt="twitter Logo" className="icon" />
             Find me on Discord as <pre>sp3c1#9062</pre>
+          </li>
+          <li>
+            <a href="#top">Go to Top</a>
           </li>
         </ul>
       </section>
