@@ -6,6 +6,7 @@ import logo from "./logo.png";
 import twitterLogo from "./twitter-square-color-icon.svg";
 import linkedinLogo from "./linkedin-square-color-icon.svg";
 import discordLogo from "./discord-icon.svg";
+import instaLogo from "./ig-instagram-icon.svg";
 import { type MoxfieldDeck } from "./deck-types";
 
 function App() {
@@ -51,6 +52,12 @@ function App() {
           <li>
             <a href="https://www.moxfield.com/users/sp3c1">
               Find me on Moxfield
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sp3c1_/">
+              <img src={instaLogo} alt="twitter Logo" className="icon" />
+              Find me on instagram
             </a>
           </li>
           <li>
